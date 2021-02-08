@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Kaushan Script", cursive;
+  background: white;
+  color: black;
+}
+
+.btn-pink {
+  color: pink;
+  border-color: pink;
+  background: transparent;
+}
+
+.btn-black {
+  color: black;
+  border-color: black;
+}
+
+.btn-black:hover {
+  color: pink;
+  background: black;
+}
+
+.btn-pink:hover {
+  color: black;
+  background: pink;
+}
+
+#about {
+    padding-bottom: 3rem;  
+    padding-top: 3rem;
+  
+}
+
+.banner {
+  color: white;
+  margin-top: -4rem;
+}
+
+.banner-title {
+  color: pink;
+  font-size: 4rem;
+}
+
+.banner-link {
+  font-size: 1.5rem;
+  color: black;
+  border: 0.2rem solid black;
+}
+
+.banner-link:hover{
+  background-color: black;
+  color: pink
+}
+
+.photo_max {
+    max-width: 100%;
+    height: auto;
+}
+
+.picture {
+  position: relative;
+}
+
+.picture:before {
+  content: "";
+  position: absolute;
+  top: -1.5rem;
+  left: -1.7rem;
+  width: 100%;
+  height: 100%;
+  outline: 0.5rem solid rgb(249, 228, 148);
+  z-index: -1;
+}
+
+.picture:hover:before {
+  top: 0;
+  left: 0;
+}
+
+.store {
+  background: rgb(238, 238, 238);
+  }
+
+.search-box {
+  background: pink;
+  color: black;
+}
+
+.header_about {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+}
+
+.description_about {
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    width: 75%;
+}
+
+.photo_about {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    align-self: center;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;    
+}
+
+.header_store {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.categories {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.search {
+    margin-left: auto;
+    margin-right: auto;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.input_box {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.input_icon {
+    margin-right: -1px;
+}
+
+.input_text {
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: .375rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.input_box>.input_icon>.input_text {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+@media (min-width: 576px) {
+    .header_store {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .search {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .header_about {
+        flex: 0 0 50%;
+        max-width: 50%;    
+    }
+    .photo_about {
+        flex: 0 0 50%;
+        max-width: 50%;    
+    }
+}
+
+@media (min-width: 992px) {
+    .categories {
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+}
+
